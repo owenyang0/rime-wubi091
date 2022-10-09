@@ -8,6 +8,7 @@
 
 patch:
   schema_list:
+    - schema: wubi091
     - schema: wubi86_jidian
     - schema: numbers
     - schema: wubi86_jidian_pinyin
@@ -140,9 +141,9 @@ patch:
       ">": {commit: "》"}
       "?": {commit: "？"}
       "@": "@"
-      "[": {commit: "【"}
+      "[": ["[", "「", "【", "〔", "［"]
       "\\": {commit: "、"}
-      "]": {commit: "】"}
+      "]": ["]", "」", "】", "〕", "］"]
       "^": {commit: "……"}
       _: "——"
       "`": "`"
